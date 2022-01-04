@@ -1,0 +1,405 @@
+/********************************************************************************
+CSS TABLE OF CONTENTS
+===== Base ====
+    |-- 1.0 - Reset
+    |-- 2.0 - Gobal
+    |-- 3.0 - Navbar
+    |-- 4.0 - About
+    |-- 5.0 - Project
+    |-- 6.0 - Footer
+    |-- 7.0 - Responsive
+**********************************************************************************
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/*********************************** 1.0 Reset *************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*********************************** 2.0 Global *************************************/
+root{
+  --light-blue : #04C3FF;
+  --light-blue-shadow:  rgb(69 211 255 / 27%);
+  --sea-green: #0ABEAD;
+  --sea-green-dark: #0CBFAE;
+  --sea-green-extra-dark: #09BEAD;
+  --sea-green-shadow: rgba(11, 190, 173,0.4);
+  --header-hamburger-background : rgba(11, 190, 173,0.8);
+  --orange: #F57F17;
+  --dark-orange: #FF5823;
+  --orange-shadow: rgba(245, 127, 23,0.2);
+  --white: #ffffff;
+  --black: #333333;
+  --disabled-btn: #09bead7a;
+  --error-message:  #e44f4fd1;
+  --toast-error: #e44f4ffa;
+  --toast-shadow:  #9c9c9ce3;
+  --toast-success: #0CBFAE;
+  --loader-color: #0CBFAE
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+	margin: 0;
+	overflow-y: overlay;
+	/* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/*********************************** 3.0 Scroll Bar *************************************/
+::-webkit-scrollbar {
+	width: 6px !important;
+	height: 6px !important;
+}
+  
+body ::-webkit-scrollbar-thumb {
+background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+background: hsla(0, 0%, 100%, 0.1);
+}
+
+
+/*********************************** 3.0 Navbar *************************************/
+
+
+
+
+
+
+/*********************************** 4.0 Profile *************************************/
+.profile-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 30em;
+  min-height: fit-content;
+  background-image: url(../images/nasa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.profile-section{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.profile-info {
+  font-size: 1.2em;
+  
+
+}
+
+
+.profile-social {
+
+}
+
+.profile-icons {
+  border: 1px solid rgb(115, 221, 216);
+  margin: 0 .5em 1em .5em;
+  padding: .2em;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -webkit-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -moz-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+}
+
+.profile-social-icons i:hover {
+  transform: scale(1.2);
+}
+
+.profile-name-style {
+  color: rgb(115, 221, 216);
+  font-weight: bold;
+}
+
+.profile-detail-container{
+
+}
+
+.profile-detail-bio {
+  font-size: 1.3em;
+}
+
+.profile-detail-text {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px;
+}
+
+.profile-detail-text h1 {
+  font-size: 40px;
+}
+
+.profile-btn {
+	border-radius: 50px;
+	padding: 10px 0;
+	width: 160px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+  
+.btn:active {
+	transform: translateY(2px);
+}
+  
+.profile-btn-1 {
+	color: var(--white);
+	border: 2px solid rgb(102, 180, 176);;
+	font-size: 12px;
+	background-color: #121214;
+  font-size: .9em;
+  margin: 0 .9em;
+  box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -webkit-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -moz-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+}
+@media only screen and (max-width: 414px) {
+	.profile-btn-1 {
+	  font-size: 13px;
+	}
+} 
+.profile-btn-1:hover {
+	color: aliceblue;
+	border: 2px solid rgb(255, 255, 255);
+
+}
+  
+.profile-btn-2 {
+	color: var(--white);
+	font-size: 12px;
+	background-color: rgb(102, 180, 176);
+  border: 2px solid linen;
+  font-size: .9em;
+  margin: 0 .9em;
+  box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -webkit-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -moz-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+}
+@media only screen and (max-width: 568px) {
+	.profile-btn-2 {
+	  z-index: -900;
+	}
+}
+
+.profile-btn-2:hover {
+	color: aliceblue;
+	border: 2px solid #1f2235;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px rgb(255, 255, 255);
+  border-radius: 50%;
+  margin: 0 0 0 7em;
+}
+
+.profile-picture-backgorund {
+  height: 20em;
+  width: 20em;
+  background-image: url("../images/profile-pic.webp");
+  background-size: cover;
+  border-radius: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -webkit-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+  -moz-box-shadow: 7px 5px 19px -9px rgba(198,237,234,0.75);
+}
+
+.profile-picture-backgorund:hover {
+  transform: scale(1.1);
+  transition: 1s ease-out;
+}
+
+@media screen and (max-width: 1110px) {
+  .profile-picture {
+    margin: 0 0 0 80px;
+  }
+  .profile-detail-bio {
+    font-size: 12px;
+  }
+  .profile-detail-text {
+    font-size: 12px;
+  }
+  .profile-btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important
+  }
+  .profile-section {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .profile-info {
+    margin: 25px
+  }
+  .profile-detail {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+/*********************************** 2.0 Global *************************************/
+
+
+@font-face {
+	font-family: "Poppins Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./assets/fonts/Poppins-Medium.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./assets/fonts/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins SemiBold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./assets/fonts/Poppins-Bold.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins ExtraBold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins Light";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./assets/fonts/Poppins-Light.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins Thin";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./assets/fonts/Poppins-Thin.ttf");
+  }
+  
+
+  
+  
+  code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	  monospace;
+  }
+  
+ 
+  
+
+  
+  .red-border {
+	border: 1px solid var(--error-message) !important;
+  }
+  
+  .fade-in {
+	opacity: 0;
+	transform: translateY(80px);
+	transition: all 0.8s ease;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
