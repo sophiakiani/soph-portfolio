@@ -13,7 +13,7 @@
     <img src="./client/public/assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Soph Portfolio</h3>
+  <h3 align="center">AJ Portfolio</h3>
 
   <p align="center">
     Simple portfolio/blog created with react.
@@ -58,9 +58,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Soph Portfolio Screen Shot][aj-porfolio-screenshot]](?)
+[![AJ Portfolio Screen Shot][aj-porfolio-screenshot]](?)
 
-Soph Portfolio project is a simple React portfolio and blog. Using... idk to be continued lol
+AJ Portfolio project is a simple React portfolio and blog created for a friend. Using... idk to be continued lol
 
 Feel free to use this project anyway you like, expect for public distribution. Remember to give credit where it is due.
 
@@ -173,9 +173,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Sophia Kiani - [GitHub](https://github.com/sophiakiani)
+B1ack Diamond - [GitHub](https://github.com/B1ackDiamond)
 
-Project Link: [https://github.com/sophiakiani/soph-portfolio](https://github.com/sophiakiani/soph-portfolio)
+Project Link: [https://github.com/B1ackDiamond/aj-porfolio](https://github.com/B1ackDiamond/aj-porfolio)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -184,4 +184,3 @@ Project Link: [https://github.com/sophiakiani/soph-portfolio](https://github.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 test ssh
-

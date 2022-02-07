@@ -7,7 +7,9 @@ import Contact from '../components/Contact'
 export default function home() {
   return (
     <div>
+      
       <Profile/>
+
       
       <About/>
 

@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react"
-import Auth from "../utils/auth"
+import Auth from "../utils/Auth"
 
 const AuthContext = createContext()
 export const useAuthContext = () => useContext(AuthContext)

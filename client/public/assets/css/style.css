@@ -121,7 +121,14 @@ background: hsla(0, 0%, 100%, 0.1);
 /*********************************** 3.0 Navbar *************************************/
 
 
-
+/*********************************** 2.0 Home *************************************/
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh !important;
+  min-height: 670px;
+}
 
 
 
@@ -229,8 +236,9 @@ background: hsla(0, 0%, 100%, 0.1);
 }
   
 .profile-btn-2 {
-	color: var(--white);
+	color: black;
 	font-size: 12px;
+  font-weight: bold;
 	background-color: rgb(102, 180, 176);
   border: 2px solid linen;
   font-size: .9em;
@@ -246,8 +254,7 @@ background: hsla(0, 0%, 100%, 0.1);
 }
 
 .profile-btn-2:hover {
-	color: aliceblue;
-	border: 2px solid #1f2235;
+	border: 2.5px solid #1f2235;
 }
 
 .profile-picture {
@@ -399,7 +406,33 @@ background: hsla(0, 0%, 100%, 0.1);
   
   
   
-  
-  
+/*********************************** 2.0 Footer *************************************/
+.footer-container {
+  height: 17.8%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  background-image: url('../images/footer.png')
+
+}
+
+.footer-section img {
+  max-width: 100%;
+  height: 130px;
+}
+
+@media only screen and (max-width: 1110px){
+  .footer-section {
+    display: flex;
+    align-items: flex-end;
+  }
+}
   
   
